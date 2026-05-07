@@ -1,0 +1,60 @@
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    .hero {
+      background: linear-gradient(135deg, #1a2a3a, #2c3e50);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .btn {
+      display: inline-block;
+      background: #e67e22;
+      color: white;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 40px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      flex: 1;
+      min-width: 200px;
+    }
+    .contact {
+      background: #1a2a3a;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    input, textarea {
+      padding: 12px;
+      margin: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 280px;
+    }
+    button {
+      background: #e67e22;
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .services { flex-direction: column; align-items: center; }
+      input, textarea { width: 90%; }
+    }

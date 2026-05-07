@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  <title>Mirko Construction</title>
+
+</head>
+<body>
+  <section class="hero">
+    <h1>🏗️ Mirko Construction</h1>
+    <p>Quality Craftsmanship | On Time | On Budget</p>
+    <a href="#contact" class="btn">Get Free Quote →</a>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <h3>🏠 Residential</h3>
+      <p>New homes, additions, and renovations</p>
+    </div>
+    <div class="service-card">
+      <h3>🏭 Commercial</h3>
+      <p>Offices, retail spaces, warehouses</p>
+    </div>
+    <div class="service-card">
+      <h3>🔧 Renovation</h3>
+      <p>Kitchen, bathroom, basement remodels</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Start Your Project Today</h2>
+    <p>Free estimates • Licensed & Insured</p>
+    <form id="quoteForm">
+      <input type="text" placeholder="Name" required><br>
+      <input type="email" placeholder="Email" required><br>
+      <input type="tel" placeholder="Phone"><br>
+      <textarea rows="3" placeholder="Project details..."></textarea><br>
+      <button type="submit">Send Request</button>
+    </form>
+    <p style="margin-top: 20px;">📞 (555) 123-4567 | ✉️ hello@mirkoconstruction.com</p>
+  </section>
+
+  <script>
+    document.getElementById('quoteForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! We will contact you within 24 hours.');
+    });
+  </script>
+</body>
+</html>
